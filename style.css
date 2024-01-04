@@ -1,0 +1,72 @@
+body {
+    padding-top: 40px;
+}
+
+.container {
+   width: 800px;
+}
+
+.change-btn {
+    padding: 15px;
+    border: none;
+    background-color: aqua;
+    border-radius: 5px;
+    color: rgb(51, 54, 54);
+}
+
+.change-btn:hover{
+    background-color: rgb(52, 184, 184);
+    color: rgb(248, 252, 252);
+}
+
+.new-button {
+    margin-left: 15px;
+}
+
+
+/* Apply Flexbox to the parent container */
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style for Todo Remaining and Todo Done sections */
+.col-md-12 {
+    flex: 1;
+    margin: 10px;
+    /* Adjust margin as needed */
+}
+
+/* Style for the todo lists */
+.todo-remaining,
+.todo-done {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Style for the h3 headers */
+.todo-remaining h3,
+.todo-done h3 {
+    color: #333;
+}
+
+/* Style for the ul lists */
+.todo-remaining-ul,
+.todo-done-ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style for the li items */
+.todo-remaining-ul li,
+.todo-done-ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    margin: 5px 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="inputs">
+            <form action="#" class="row g-3" id="form">
+                <div class="col-md-5">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="todo-name" placeholder="Items">
+                        <label for="todo-name">Todo Name</label>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="todo-description" placeholder="Password">
+                        <label for="todo-description">Todo Description</label>
+                    </div>
+                </div>
+                
+                <div class="col-md-2 text-end">
+                    <button type="submit" class="change-btn">Add Todo</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="row">
+            <div class="todo-remaining col-md-12">
+                <h3>Todo Remaining</h3>
+                <ul class="todo-remaining-ul">
+                    
+                </ul>
+            </div>
+            
+            <div class="todo-done col-md-12">
+                <h3>Todo Done</h3>
+                <ul class="todo-done-ul">
+                   
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
