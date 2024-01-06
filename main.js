@@ -6,7 +6,7 @@ const todoDoneUl = document.querySelector(".todo-done-ul");
 
 document.addEventListener("DOMContentLoaded", () => {
   axios
-    .get("https://crudcrud.com/api/7196c985d6c54a058a6b25df20473a64/todoData")
+    .get("https://crudcrud.com/api/520b18605ce4458db5ae3b22faad04e4/todoData")
     .then((res) => {
       for (var i = 0; i < res.data.length; i++) {
         if (res.data[i].todoData.isCompleted === false) {
@@ -33,7 +33,7 @@ form.addEventListener("submit", (e) => {
 
   axios
     .post(
-      "https://crudcrud.com/api/7196c985d6c54a058a6b25df20473a64/todoData",
+      "https://crudcrud.com/api/520b18605ce4458db5ae3b22faad04e4/todoData",
       { todoData }
     )
     .then((result) => {
@@ -84,7 +84,7 @@ function createTodo(todo, todoId) {
     console.log(todoId);
     axios
       .put(
-        `https://crudcrud.com/api/7196c985d6c54a058a6b25df20473a64/todoData/${todoId}`,
+        `https://crudcrud.com/api/520b18605ce4458db5ae3b22faad04e4/todoData/${todoId}`,
         {
           todoData: {
             name: todo.name,
@@ -106,7 +106,7 @@ function createTodo(todo, todoId) {
   deleteBtn.addEventListener("click", () => {
     axios
       .delete(
-        `https://crudcrud.com/api/7196c985d6c54a058a6b25df20473a64/todoData/${todoId}`
+        `https://crudcrud.com/api/520b18605ce4458db5ae3b22faad04e4/todoData/${todoId}`
       )
       .then((res) => {
         console.log(res);
